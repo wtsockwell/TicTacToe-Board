@@ -1,9 +1,12 @@
+
+/*added VH because the board was less than the tic tac to board size*/
 #board{
     padding: 3m 0;
     text-align: center;
     background-color: blueviolet;
+    height: 80vh;
 }
-.row>div{
+.row > div{
     float: left;
     height: 100px;
     width: 100px;
@@ -19,7 +22,7 @@
     border-bottom: 1px solid black
 }
 .middle{
-
+    
 }
 .bot{
     border-top: 1px solid black;

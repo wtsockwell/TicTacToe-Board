@@ -20,14 +20,16 @@ function cellClicked() {
     };
     if(turn == 9 && winScreen.textContent == " "){
         winScreen.textContent = "Draw!";
-    } else if (turn == 10 ){
+    } else if (turn == 10){
         turn = 0;
         for(j=0; j < cells.length; j ++){
             cells[j].textContent = " ";
         }
         winScreen.textContent = " ";
     };
-    console.log(turn);
+    if(winScreen.textContent !== " "){
+        turn = 9
+    };
 };
 
 function winCon(){
